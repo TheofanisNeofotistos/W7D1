@@ -10,11 +10,17 @@
 #  updated_at      :datetime         not null
 #
 class User < ApplicationRecord
+    attr_reader :password
+    
     validates :username, :session_token, presence: true, uniqueness: true
     validates :password_digest, presence: true 
     validates :password, length: { minimum: 6, allow_nil: true }
 
     before_validation :ensure_session_token
+
+    def login(user)
+        session[:session_token] = user.reset_session_token!
+    end
 
     def password=(password)
         @password = password 
