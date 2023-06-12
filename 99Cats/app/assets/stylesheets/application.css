@@ -36,16 +36,16 @@ nav {
   align-items: center;
   box-sizing: border-box;
   padding: 0 20px;
-  color: yellow;
+  color: orange;
 }
 
 h1 {
   font-size: 60px;
-  color: yellow;
+  color: orange;
 }
 
 a {
-  color: yellow;
+  color: orange;
 }
 
 
@@ -60,7 +60,7 @@ table {
 
 th {
   background-color: #000066;
-  color: yellow;
+  color: orange;
   padding: 10px 20px;
 }
 
@@ -68,7 +68,7 @@ textarea, select, input {
   font-family: 'Amatic SC', cursive;
   background-color: inherit;
   border: 0px;
-  border-bottom: 5px solid yellow;
+  border-bottom: 5px solid orange;
   font-size: 30px;
   margin: 5px 10px;
 }
@@ -102,7 +102,7 @@ nav form {
 }
 
 nav input {
-  color: yellow;
+  color: orange;
 }
 
 .main-nav {
@@ -124,7 +124,7 @@ nav input {
 
 .jumbotron h1 {
   font-size: 150px;
-  color: yellow;
+  color: orange;
   position: absolute;
   bottom: 120px;
   right: 50px;

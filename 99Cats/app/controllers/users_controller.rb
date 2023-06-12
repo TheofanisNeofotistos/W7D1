@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     def create
         @user = User.new(user_params)
         if @user.save
-            redirect_to user_url(@user.user_id)
+            redirect_to cats_url
         else
             render :new
         end
