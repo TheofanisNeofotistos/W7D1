@@ -18,7 +18,10 @@ class User < ApplicationRecord
 
     before_validation :ensure_session_token
 
-    
+    has_many :cats,
+    foreign_key: :owner_id,
+    class_name: :Cat,
+    inverse_of: :owner
 
     def password=(password)
         @password = password 
