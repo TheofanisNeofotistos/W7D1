@@ -18,9 +18,7 @@ class User < ApplicationRecord
 
     before_validation :ensure_session_token
 
-    def login(user)
-        session[:session_token] = user.reset_session_token!
-    end
+    
 
     def password=(password)
         @password = password 

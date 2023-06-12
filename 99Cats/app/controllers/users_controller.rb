@@ -2,7 +2,6 @@ class UsersController < ApplicationController
     def index
         @users = User.all
         render :index
-
     end
 
     def new
@@ -12,7 +11,7 @@ class UsersController < ApplicationController
     def create
         @user = User.new(user_params)
         if @user.save
-            redirect_to users_url
+            redirect_to user_url(@user.user_id)
         else
             render :new
         end
